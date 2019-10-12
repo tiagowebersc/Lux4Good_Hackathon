@@ -1,0 +1,22 @@
+main{
+
+    padding: 25px;
+}
+.main-screen{
+    display: flex;
+}
+.charts-div{
+    width: 60%;
+    border-right: 1px solid black;
+}
+.campaign-list{
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
