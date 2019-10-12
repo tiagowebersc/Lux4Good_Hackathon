@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/superAdmin', function () {
     return view('town_manager');
 });
+Route::get('/superAdmin2', function () {
+    return view('summary_manager');
+});
