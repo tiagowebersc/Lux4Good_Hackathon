@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\CampaignRequest;
+use App\Http\Requests\OutcomeRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class CampaignCrudController
+ * Class OutcomeCrudController
  * @package App\Http\Controllers\Admin
  * @property-read CrudPanel $crud
  */
-class CampaignCrudController extends CrudController
+class OutcomeCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -21,17 +21,18 @@ class CampaignCrudController extends CrudController
 
     public function setup()
     {
-        $this->crud->setModel('App\Models\Campaign');
-        $this->crud->setRoute(config('backpack.base.route_prefix') . '/campaign');
-        $this->crud->setEntityNameStrings('campaign', 'campaigns');
+        $this->crud->setModel('App\Models\Outcome');
+        $this->crud->setRoute(config('backpack.base.route_prefix') . '/outcome');
+        $this->crud->setEntityNameStrings('outcome', 'outcomes');
     }
 
     protected function setupListOperation()
     {
         // TODO: remove setFromDb() and manually define Columns, maybe Filters
         //$this->crud->setFromDb();
-        $this->crud->addColumn(['name' => 'town.name', 'type' => 'text', 'label' => 'Town']);
-        $this->crud->addColumn(['name' => 'description', 'type' => 'text', 'label' => 'Description']);
+        $this->crud->addColumn(['name' => 'action.description', 'type' => 'text', 'label' => 'Action']);
+        $this->crud->addColumn(['name' => 'age', 'type' => 'number', 'label' => 'Age']);
+        $this->crud->addColumn(['name' => 'gender', 'type' => 'text', 'label' => 'Gender']);
     }
 
     protected function setupCreateOperation()
@@ -43,21 +44,23 @@ class CampaignCrudController extends CrudController
 
     protected function setupUpdateOperation()
     {
-        $this->crud->setValidation(CampaignRequest::class);
-
+        $this->crud->setValidation(OutcomeRequest::class);
+        
         $this->crud->addField([  // Select
-            'label' => "Town",
+            'label' => "Action",
             'type' => 'select',
-            'name' => 'town_id', // the db column for the foreign key
-            'entity' => 'town', // the method that defines the relationship in your Model
-            'attribute' => 'name', // foreign key attribute that is shown to user
-            'model' => "App\Models\Town",
+            'name' => 'action_id', // the db column for the foreign key
+            'entity' => 'action', // the method that defines the relationship in your Model
+            'attribute' => 'description', // foreign key attribute that is shown to user
+            'model' => "App\Models\Action",
          
            ]);
         
-        $this->crud->addField(['name' => 'description', 'type' => 'text', 'label' => 'Description']);
+        $this->crud->addField(['name' => 'age', 'type' => 'number', 'label' => 'Age']);
+        $this->crud->addField(['name' => 'gender', 'type' => 'text', 'label' => 'Gender']);
         // Hidden field relate to : created_by / updated_by
         $this->crud->addField(['name' => 'updated_by', 'type' => 'hidden', 'label' => 'Updated By', 'value'=> backpack_user()->id]);
     
     }
+
 }
