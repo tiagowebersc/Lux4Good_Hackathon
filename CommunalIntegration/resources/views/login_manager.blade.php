@@ -15,11 +15,12 @@
             <h2>LOGIN</h2>
             <div class= 'form'>
                 <form action="/summary_manager.blade.php">
-                    <label for="email">EMAIL</label>
+                    <label for="email">EMAIL</label><br>
                     <input class="email" type="email" name="email" id="email" placeholder="please enter your email"><br>
-                    <label for="email">PASSWORD</label>
+                    <label for="email">PASSWORD</label><br>
                     <input class="password" type="password" name="password" id="password" label="PASSWORD" placeholder="please enter your password"><br>
                     <div class="buttonBox">
+                        <h4>forget your password?</h4>
                         <input class="button" type="button" value="LOGIN">
                     </div>
                 </form>
