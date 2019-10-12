@@ -5,28 +5,41 @@
 
 .formbox
 {
+   color: grey;
+   font-weight: 600; 
+   font-size: 20px;
    border: 1px solid black;
-   background-color: lightgray;
-   width: 40em;
+   background-color: #F8F8FF;
+   width: 35em;
    position: absolute;
-   top: 100px;
+   top: 80px;
    border-radius: 10px;
+   -webkit-box-shadow: 4px 14px 19px 8px rgba(0,0,0,0.75);
+   -moz-box-shadow: 4px 14px 19px 8px rgba(0,0,0,0.75);
+   box-shadow: 4px 14px 19px 8px rgba(0,0,0,0.75);
    
 }
 h2
 {
-    padding-left: 10px;
+    padding-left: 60px;
     padding-top: 30px;
+}
+h4
+{
+    font-size: 14px;
+    color: #F65757;
 }
 .form
 {
-    margin: 5em;
+    margin: 3em;
 }
 input
 {
     margin: 2em;
     border-radius: 10px;
     font-size: 20px;
+    border: none;
+    text-align: center;
 }
 .email
 {
@@ -40,8 +53,16 @@ input
 }
 .buttonBox
 {
-    width: 30px;
+    width: 22em;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+}
+.button
+{
+    background-color: #F65757;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin: 0;
 }
 
