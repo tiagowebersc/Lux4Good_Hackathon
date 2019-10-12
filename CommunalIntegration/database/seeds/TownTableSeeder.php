@@ -70,5 +70,45 @@ class TownTableSeeder extends Seeder
             'updated_by' => rand(0, 5),
             'active' => 1
         ]);
+
+        DB::table('town')->insert([
+            'name' => "Vianden",
+            'image_path' => 'vianden.jpg',
+            'created_at' => now(),
+            'created_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
+            'active' => 1
+        ]);
+
+        DB::table('town')->insert([
+            'name' => "Mersch",
+            'image_path' => 'mersch.jpg',
+            'created_at' => now(),
+            'created_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
+            'active' => 1
+        ]);
+
+        DB::table('town')->insert([
+            'name' => "Clervaux",
+            'image_path' => 'clervaux.jpeg',
+            'created_at' => now(),
+            'created_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
+            'active' => 1
+        ]);
+
+        DB::table('town')->insert([
+            'name' => "Wiltz",
+            'image_path' => 'wiltz.jpg',
+            'created_at' => now(),
+            'created_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
+            'active' => 1
+        ]);
     }
 }

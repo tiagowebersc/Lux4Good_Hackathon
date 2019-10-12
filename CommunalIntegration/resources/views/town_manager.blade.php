@@ -13,7 +13,7 @@
 <main class='mainList'>
 
     <div class="listHeader">
-        <h1>TOWN</h1>
+        <h1>TOWNS</h1>
 
         <div class="form-group has-search">
             <span class="fa fa-search form-control-feedback"></span>
