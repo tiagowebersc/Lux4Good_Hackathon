@@ -21,10 +21,11 @@ class CreateTownTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name', 45);
+            $table->string('image_path', 100);
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
         });
     }

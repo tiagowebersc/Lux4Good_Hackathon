@@ -23,8 +23,8 @@ class CreateActionTargetGroupTable extends Migration
             $table->integer('action_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
             $table->index(["action_id"], 'fk_action_target_group_action1_idx');
             $table->foreign('action_id', 'fk_action_target_group_action1_idx')

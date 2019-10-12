@@ -16,8 +16,8 @@ class CampaignTableSeeder extends Seeder
             'description' => Str::random(40),
             'created_at' => now(),
             'created_by' => rand(0, 5),
-            'last_modification_at' => now(),
-            'last_modification_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
             'active' => rand(0, 2),
         ]);
 
@@ -26,8 +26,8 @@ class CampaignTableSeeder extends Seeder
             'description' => Str::random(40),
             'created_at' => now(),
             'created_by' => rand(0, 5),
-            'last_modification_at' => now(),
-            'last_modification_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
             'active' => rand(0, 2),
         ]);
 
@@ -36,8 +36,8 @@ class CampaignTableSeeder extends Seeder
             'description' => Str::random(40),
             'created_at' => now(),
             'created_by' => rand(0, 5),
-            'last_modification_at' => now(),
-            'last_modification_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
             'active' => rand(0, 2),
         ]);
 
@@ -46,8 +46,8 @@ class CampaignTableSeeder extends Seeder
             'description' => Str::random(40),
             'created_at' => now(),
             'created_by' => rand(0, 5),
-            'last_modification_at' => now(),
-            'last_modification_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
             'active' => rand(0, 2),
         ]);
 
@@ -56,8 +56,8 @@ class CampaignTableSeeder extends Seeder
             'description' => Str::random(40),
             'created_at' => now(),
             'created_by' => rand(0, 5),
-            'last_modification_at' => now(),
-            'last_modification_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
             'active' => rand(0, 2),
         ]);
 
@@ -66,8 +66,8 @@ class CampaignTableSeeder extends Seeder
             'description' => Str::random(40),
             'created_at' => now(),
             'created_by' => rand(0, 5),
-            'last_modification_at' => now(),
-            'last_modification_by' => rand(0, 5),
+            'updated_at' => now(),
+            'updated_by' => rand(0, 5),
             'active' => rand(0, 2),
         ]);
     }
