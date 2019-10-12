@@ -33,8 +33,10 @@ class SuperAdmin extends Controller
         $queryGender = DB::select("select a.gender, count(1) total from outcome a group by a.gender;", []);
         $queryAge = DB::select("select a.age, count(1) total from outcome a group by a.age;", []);
         $queryNationality = DB::select("select c.name, count(1) total from outcome a, nationality b, country c where a.id = b.outcome_id and b.country_id = c.id group by c.name", []);
-    
-        return view('summary_manager', ['queryGender' => $queryGender, 'queryAge' => $queryAge, 'nationality' => $queryNationality]);
+        $queryEducation = DB::select("select a.education, count(1) total from outcome a group by a.education;", []);
+        $queryChild = DB::select("select a.child, count(1) total from outcome a group by a.child;", []);
+
+        return view('summary_manager', ['queryGender' => $queryGender, 'queryAge' => $queryAge, 'queryEducation' => $queryEducation,'queryChild' => $queryChild, 'nationality' => $queryNationality]);
     }
 
     public function userList(){

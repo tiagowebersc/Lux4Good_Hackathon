@@ -22,10 +22,10 @@ class OutcomeTableSeeder extends Seeder
                 'income' => $income[rand(0, 2)],
                 'stay_duration_country' => rand(1968,2014),
                 'stay_duration_town' => rand(1968,2014),
-                'child' => rand(0, 4),
+                'child' => round(rand(0, 400)/100),
                 'country_of_birth_id' => 1,
                 'gender' => $gender[round(rand(0, 10)/10)],
-                'education' => $education[rand(0, 4)],
+                'education' => $education[round(rand(0, 400)/100)],
                 'marital_status' => rand(0, 5),
                 'professional_status' => rand(0, 3)
             ]);
