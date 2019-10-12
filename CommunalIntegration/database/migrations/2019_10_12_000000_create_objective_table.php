@@ -21,7 +21,7 @@ class CreateObjectiveTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('description', 45);
-            $table->integer('campaign_id');
+            $table->integer('campaign_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
             $table->date('last_modification_at');

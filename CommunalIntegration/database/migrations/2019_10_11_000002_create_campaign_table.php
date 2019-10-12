@@ -20,7 +20,7 @@ class CreateCampaignTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('town_id');
+            $table->integer('town_id')->unsigned();
             $table->string('description', 45);
             $table->date('created_at');
             $table->integer('created_by');
