@@ -14,4 +14,8 @@ class SuperAdmin extends Controller
 
         return view('town_manager', ['towns' => $towns]);
     }
+
+    public function getResume(){
+        
+    }
 }
