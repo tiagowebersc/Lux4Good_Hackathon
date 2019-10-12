@@ -18,7 +18,8 @@
             <img class='logo' src="{{ URL::asset('images/4motion_logo.png') }}" alt="">
             <ul>
                 <li class='sidebar-item'><a href="/"> <span>Summary</span>> </a></li>
-                <li  class='sidebar-item'><a href="/towns"> <span>Towns</span>> </a></li>
+                <li  class='sidebar-item'><a href="/"> <span>Towns</span>> </a></li>
+                <li  class='sidebar-item'><a href="/"> <span>Users</span>> </a></li>
             </ul>
         </div>
         <div>
