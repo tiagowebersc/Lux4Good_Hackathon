@@ -10,7 +10,23 @@
 @section('content')
 
 <main>
+    <?php
+        $keyGender = '';
+        $valueGender = '';
+        foreach ($queryGender as $value) {
+            if (!empty($valueGender)) {
+                $keyGender .= ',';
+            }
+            $keyGender .= $value->gender;
+            if (!empty($valueGender)) {
+                $valueGender .= ',';
+            }
+            $valueGender .= $value->total;
+        }
+    ?>
+    {{$valueGender}}
     <h1>SUMMARY</h1>
+    
     <div class='main-screen'>
         <div class='charts-div'>
             <canvas class='chart' id="myChart"></canvas>
@@ -37,15 +53,11 @@
             type: 'pie',
             data : {
                 datasets: [{
-                    data: [10, 20, 30]
+                    data: [{{$valueGender}}]
                 }],
 
                 // These labels appear in the legend and in the tooltips when hovering different arcs
-                labels: [
-                    'Red',
-                    'Yellow',
-                    'Blue'
-                ]
+                labels: [{{$keyGender}}]
             }
         });
         var myChart2 = new Chart(ctx2, {
