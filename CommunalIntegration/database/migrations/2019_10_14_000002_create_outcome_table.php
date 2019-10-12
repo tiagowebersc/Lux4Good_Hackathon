@@ -34,10 +34,10 @@ class CreateOutcomeTable extends Migration
             $table->integer('education')->nullable();
             $table->integer('marital_status')->nullable();
             $table->integer('professional_status')->nullable();
-            $table->date('created_at');
-            $table->integer('created_by');
-            $table->date('updated_at');
-            $table->integer('updated_by');
+            $table->date('created_at')->nullable();
+            $table->integer('created_by')->nullable();
+            $table->date('updated_at')->nullable();
+            $table->integer('updated_by')->nullable();
 
             $table->index(["action_id"], 'fk_outcome_action1_idx');
 
