@@ -23,25 +23,47 @@
         <input class='addButton' value='ADD TOWN +' type="submit">
     </div>
 
+    <div class="listModal">
 
-    <div class="listContent">
+        <div class="listContent">
 
-        @foreach ($towns as $town)
+            @foreach ($towns as $town)
 
-            <div class="listContentItem">
+                <div class="listContentItem">
 
-                <p class='itemTitle'>{{$town->name}}</p>
-            <img src="{{URL::asset('images/' . $town->image_path)}}" alt="image of {{$town->name}}">
+                    <p class='itemTitle'>{{$town->name}}</p>
+                <img src="{{URL::asset('images/' . $town->image_path)}}" alt="image of {{$town->name}}">
+
+                </div>
+
+            @endforeach
+
+        </div>
+
+        <div class='addTown'>
+
+            <div class='addTownCenter'>
+                <form action="superAdmin">
+                    <label for="newTownName">
+                        TOWN NAME:
+                        <br>
+                        <input type="text" name="newTownName" class="newTownName" placeholder="Enter a town name">
+                    </label>
+                    <input type="submit" class='createBtn' value="Create Town">
+                </form>
 
             </div>
-
-        @endforeach
+        </div>
 
     </div>
 
-    <div class="listPagination"></div>
-
 
 </main>
+
+@endsection
+
+@section('script')
+
+    <script type="text/javascript" src="{{ URL::asset('js/town_manager.js') }}"></script>
 
 @endsection

@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::get('/superAdmin', 'SuperAdmin@getTowns');
 
+Route::post('/superAdmin', 'SuperAdmin@createTown');
+
 Route::get('/superAdmin2', function () {
     return view('summary_manager');
 });

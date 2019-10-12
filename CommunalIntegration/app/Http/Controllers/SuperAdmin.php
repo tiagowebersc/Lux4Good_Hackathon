@@ -15,7 +15,16 @@ class SuperAdmin extends Controller
         return view('town_manager', ['towns' => $towns]);
     }
 
-    public function getResume(){
-        
+    public function createTown(Request $request) {
+
+        if(hasValue($request->name)) {
+            $town = new Town;
+            $town->name = $request->newTownName;
+            $town->created_at = now();
+            $town->created_by = backpack_user()->id;
+            $town->updated_at = now();
+            $town->updated_by = backpack_user()->id;
+            $town->save();
+        }
     }
 }
