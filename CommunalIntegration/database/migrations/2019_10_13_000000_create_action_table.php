@@ -30,8 +30,8 @@ class CreateActionTable extends Migration
             $table->string('date', 50)->nullable();
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
             $table->index(["theme_id"], 'fk_action_theme1_idx');
             $table->index(["user_editor_id"], 'fk_action_user1_idx');

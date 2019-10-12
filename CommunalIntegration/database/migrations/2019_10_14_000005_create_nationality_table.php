@@ -26,8 +26,8 @@ class CreateNationalityTable extends Migration
             $table->integer('outcome_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
 
             $table->index(["outcome_id"], 'fk_nationality_outcome1_idx');

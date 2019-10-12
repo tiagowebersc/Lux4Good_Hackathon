@@ -16,8 +16,8 @@ class ObjectiveTableSeeder extends Seeder
             'campaign_id' => 1,
             'created_at' => now(),
             'created_by' => 1,
-            'last_modification_at' => now(),
-            'last_modification_by' => 1,
+            'updated_at' => now(),
+            'updated_by' => 1,
             'active' => rand(0, 2),
         ]);
 
@@ -26,8 +26,8 @@ class ObjectiveTableSeeder extends Seeder
             'campaign_id' => 2,
             'created_at' => now(),
             'created_by' => 2,
-            'last_modification_at' => now(),
-            'last_modification_by' => 2,
+            'updated_at' => now(),
+            'updated_by' => 2,
             'active' => rand(0, 2),
         ]);
 
@@ -36,8 +36,8 @@ class ObjectiveTableSeeder extends Seeder
             'campaign_id' => 3,
             'created_at' => now(),
             'created_by' => 3,
-            'last_modification_at' => now(),
-            'last_modification_by' => 3,
+            'updated_at' => now(),
+            'updated_by' => 3,
             'active' => rand(0, 2),
         ]);
 
@@ -46,8 +46,8 @@ class ObjectiveTableSeeder extends Seeder
             'campaign_id' => 4,
             'created_at' => now(),
             'created_by' => 4,
-            'last_modification_at' => now(),
-            'last_modification_by' => 4,
+            'updated_at' => now(),
+            'updated_by' => 4,
             'active' => rand(0, 2),
         ]);
 
@@ -56,8 +56,8 @@ class ObjectiveTableSeeder extends Seeder
             'campaign_id' => 5,
             'created_at' => now(),
             'created_by' => 5,
-            'last_modification_at' => now(),
-            'last_modification_by' => 5,
+            'updated_at' => now(),
+            'updated_by' => 5,
             'active' => rand(0, 2),
         ]);
 
@@ -66,8 +66,8 @@ class ObjectiveTableSeeder extends Seeder
             'campaign_id' => 6,
             'created_at' => now(),
             'created_by' => 6,
-            'last_modification_at' => now(),
-            'last_modification_by' => 6,
+            'updated_at' => now(),
+            'updated_by' => 6,
             'active' => rand(0, 2),
         ]);
     }
