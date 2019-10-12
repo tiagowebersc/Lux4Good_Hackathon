@@ -24,14 +24,14 @@ class CreateOutcomeTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('action_id')->unsigned();
-            $table->integer('age')->nullable();
-            $table->integer('income')->nullable();
+            $table->string('age')->nullable();
+            $table->string('income')->nullable();
             $table->integer('stay_duration_country')->nullable();
             $table->integer('stay_duration_town')->nullable();
             $table->integer('child')->nullable();
             $table->integer('country_of_birth_id')->unsigned()->nullable();
-            $table->integer('gender')->nullable();
-            $table->integer('education')->nullable();
+            $table->string('gender')->nullable();
+            $table->string('education')->nullable();
             $table->integer('marital_status')->nullable();
             $table->integer('professional_status')->nullable();
             $table->date('created_at')->nullable();
