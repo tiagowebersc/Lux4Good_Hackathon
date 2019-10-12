@@ -24,6 +24,7 @@ class UsersTableSeeder extends Seeder
             'active' => rand(0, 1),
         ]);
 
+
         DB::table('users')->insert([
             'town_id' => 2,
             'role_id' => 2,
