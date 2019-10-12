@@ -24,8 +24,8 @@ class CreateCampaignTable extends Migration
             $table->string('description', 45);
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
             $table->index(["town_id"], 'fk_project_town1_idx');
             $table->foreign('town_id', 'fk_project_town1_idx')

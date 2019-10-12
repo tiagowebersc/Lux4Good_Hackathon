@@ -24,8 +24,8 @@ class CreateObjectiveTable extends Migration
             $table->integer('campaign_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
             $table->index(["campaign_id"], 'fk_objective_campaign1_idx');
             $table->foreign('campaign_id', 'fk_objective_campaign1_idx')

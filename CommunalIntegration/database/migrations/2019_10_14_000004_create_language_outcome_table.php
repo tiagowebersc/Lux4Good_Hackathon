@@ -26,8 +26,8 @@ class CreateLanguageOutcomeTable extends Migration
             $table->integer('language_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
 
             $table->index(["language_id"], 'fk_language_outcome_language1_idx');

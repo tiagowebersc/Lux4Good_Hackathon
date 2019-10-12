@@ -25,8 +25,8 @@ class CreateUsersTable extends Migration
             $table->string('password', 100);
             $table->date('created_at');
             $table->integer('created_by');
-            $table->date('last_modification_at');
-            $table->integer('last_modification_by');
+            $table->date('updated_at');
+            $table->integer('updated_by');
             $table->tinyInteger('active');
             $table->index(["role_id"], 'fk_user_role1_idx');
             $table->index(["town_id"], 'fk_user_town_idx');
