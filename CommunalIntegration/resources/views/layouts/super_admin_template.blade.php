@@ -13,9 +13,10 @@
 <body class='body'>
     <div class="sidebar">
         <div>
+            <img class='logo' src="{{ URL::asset('images/4motion_logo.png') }}" alt="">
             <ul>
-                <li><a href="/"> Sumary </a></li>
-                <li ><a href="/towns">  Towns </a></li>
+                <li class='sidebar-item'><a href="/"> <span>Sumary</span>> </a></li>
+                <li  class='sidebar-item'><a href="/towns">  Towns    > </a></li>
             </ul>
         </div>
     </div>
