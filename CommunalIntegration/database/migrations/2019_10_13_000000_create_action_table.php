@@ -21,11 +21,11 @@ class CreateActionTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('description', 45);
-            $table->integer('campaign_id');
-            $table->integer('user_editor_id');
-            $table->integer('user_responsible_id');
-            $table->integer('objective_id');
-            $table->integer('theme_id');
+            $table->integer('campaign_id')->unsigned();
+            $table->integer('user_editor_id')->unsigned();
+            $table->integer('user_responsible_id')->unsigned();
+            $table->integer('objective_id')->unsigned();
+            $table->integer('theme_id')->unsigned();
             $table->string('partner', 150);
             $table->string('date', 50)->nullable();
             $table->date('created_at');
