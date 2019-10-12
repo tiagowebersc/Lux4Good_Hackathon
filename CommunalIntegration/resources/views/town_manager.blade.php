@@ -23,18 +23,19 @@
         <input class='addButton' value='ADD TOWN +' type="submit">
     </div>
 
+
     <div class="listContent">
 
-        @for ($i = 0; $i < 8; $i++)
+        @foreach ($towns as $town)
 
-        <div class="listContentItem">
+            <div class="listContentItem">
 
-            <p class='itemTitle'>Petange</p>
-            <img src="{{URL::asset('images/beautiful.jpeg')}}" alt="image of 'insert name'">
+                <p class='itemTitle'>{{$town->name}}</p>
+            <img src="{{URL::asset('images/' . $town->image_path)}}" alt="image of {{$town->name}}">
 
-        </div>
+            </div>
 
-        @endfor
+        @endforeach
 
     </div>
 

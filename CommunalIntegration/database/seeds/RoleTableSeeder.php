@@ -17,7 +17,7 @@ class RoleTableSeeder extends Seeder
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 2)
+            'active' => rand(0, 1)
         ]);
 
         DB::table('role')->insert([
@@ -26,7 +26,7 @@ class RoleTableSeeder extends Seeder
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 2)
+            'active' => rand(0, 1)
         ]);
 
         DB::table('role')->insert([
@@ -35,7 +35,7 @@ class RoleTableSeeder extends Seeder
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 2)
+            'active' => rand(0, 1)
         ]);
 
         DB::table('role')->insert([
@@ -44,7 +44,7 @@ class RoleTableSeeder extends Seeder
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 2)
+            'active' => rand(0, 1)
         ]);
 
         DB::table('role')->insert([
@@ -53,7 +53,7 @@ class RoleTableSeeder extends Seeder
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 2)
+            'active' => rand(0, 1)
         ]);
 
         DB::table('role')->insert([
@@ -62,7 +62,7 @@ class RoleTableSeeder extends Seeder
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 2)
+            'active' => rand(0, 1)
         ]);
     }
 }

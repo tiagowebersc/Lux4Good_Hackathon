@@ -19,7 +19,7 @@ class OutcomeTableSeeder extends Seeder
             'stay_duration_town' => rand(0, 8),
             'child' => rand(0, 4),
             'country_of_birth_id' => 1,
-            'gender' => rand(0, 2),
+            'gender' => rand(0, 1),
             'education' => rand(0, 5),
             'marital_status' => rand(0, 5),
             'professional_status' => rand(0, 3)
@@ -33,7 +33,7 @@ class OutcomeTableSeeder extends Seeder
             'stay_duration_town' => rand(0, 8),
             'child' => rand(0, 4),
             'country_of_birth_id' => 2,
-            'gender' => rand(0, 2),
+            'gender' => rand(0, 1),
             'education' => rand(0, 5),
             'marital_status' => rand(0, 5),
             'professional_status' => rand(0, 3)
@@ -47,7 +47,7 @@ class OutcomeTableSeeder extends Seeder
             'stay_duration_town' => rand(0, 8),
             'child' => rand(0, 4),
             'country_of_birth_id' => 3,
-            'gender' => rand(0, 2),
+            'gender' => rand(0, 1),
             'education' => rand(0, 5),
             'marital_status' => rand(0, 5),
             'professional_status' => rand(0, 3)
@@ -61,7 +61,7 @@ class OutcomeTableSeeder extends Seeder
             'stay_duration_town' => rand(0, 8),
             'child' => rand(0, 4),
             'country_of_birth_id' => 4,
-            'gender' => rand(0, 2),
+            'gender' => rand(0, 1),
             'education' => rand(0, 5),
             'marital_status' => rand(0, 5),
             'professional_status' => rand(0, 3)
@@ -75,7 +75,7 @@ class OutcomeTableSeeder extends Seeder
             'stay_duration_town' => rand(0, 8),
             'child' => rand(0, 4),
             'country_of_birth_id' => 5,
-            'gender' => rand(0, 2),
+            'gender' => rand(0, 1),
             'education' => rand(0, 5),
             'marital_status' => rand(0, 5),
             'professional_status' => rand(0, 3)
@@ -89,7 +89,7 @@ class OutcomeTableSeeder extends Seeder
             'stay_duration_town' => rand(0, 8),
             'child' => rand(0, 4),
             'country_of_birth_id' => 6,
-            'gender' => rand(0, 2),
+            'gender' => rand(0, 1),
             'education' => rand(0, 5),
             'marital_status' => rand(0, 5),
             'professional_status' => rand(0, 3)
