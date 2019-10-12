@@ -12,113 +12,63 @@ class TownTableSeeder extends Seeder
     public function run()
     {
         DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato.png',
+            'name' => 'Differdange',
+            'image_path' => 'differdange.jpg',
             'created_at' => now(),
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
+            'active' => 1
         ]);
 
         DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato1.jpg',
+            'name' => "Petange",
+            'image_path' => 'petange.jpg',
             'created_at' => now(),
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
+            'active' => 1
         ]);
 
         DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato2.jpg',
+            'name' => "Rodange",
+            'image_path' => 'rodange.jpg',
             'created_at' => now(),
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
+            'active' => 1
         ]);
 
         DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato3.jpg',
+            'name' => "Niederkorn",
+            'image_path' => 'niederkorn.jpg',
             'created_at' => now(),
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
+            'active' => 1
         ]);
 
         DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato4.jpeg',
+            'name' => "Luxembourg-City",
+            'image_path' => 'luxembourg.jpg',
             'created_at' => now(),
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
+            'active' => 1
         ]);
 
         DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato5.jpeg',
+            'name' => "Belval",
+            'image_path' => 'belvaux.png',
             'created_at' => now(),
             'created_by' => rand(0, 5),
             'updated_at' => now(),
             'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
-        ]);
-
-        DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato6.jpg',
-            'created_at' => now(),
-            'created_by' => rand(0, 5),
-            'updated_at' => now(),
-            'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
-        ]);
-
-        DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato7.jpg',
-            'created_at' => now(),
-            'created_by' => rand(0, 5),
-            'updated_at' => now(),
-            'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
-        ]);
-
-        DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato8.jpeg',
-            'created_at' => now(),
-            'created_by' => rand(0, 5),
-            'updated_at' => now(),
-            'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
-        ]);
-
-        DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato9.jpg',
-            'created_at' => now(),
-            'created_by' => rand(0, 5),
-            'updated_at' => now(),
-            'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
-        ]);
-
-        DB::table('town')->insert([
-            'name' => Str::Random(10),
-            'image_path' => 'pato10.png',
-            'created_at' => now(),
-            'created_by' => rand(0, 5),
-            'updated_at' => now(),
-            'updated_by' => rand(0, 5),
-            'active' => rand(0, 1)
+            'active' => 1
         ]);
     }
 }
