@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/superAdmin', function () {
-    return view('town_manager');
-});
+Route::get('/superAdmin', 'SuperAdmin@getTowns');
