@@ -1,0 +1,47 @@
+.main-screen
+{
+    position: relative;
+}
+
+.formbox
+{
+   border: 1px solid black;
+   background-color: lightgray;
+   width: 40em;
+   position: absolute;
+   top: 100px;
+   border-radius: 10px;
+   
+}
+h2
+{
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.form
+{
+    margin: 5em;
+}
+input
+{
+    margin: 2em;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.email
+{
+    width: 20em;
+    height: 3em;
+}
+.password
+{
+    height: 3em;
+    width: 20em;
+}
+.buttonBox
+{
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+

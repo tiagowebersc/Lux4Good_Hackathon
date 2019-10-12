@@ -25,3 +25,6 @@ Route::get('/superAdmin2', function () {
 Route::get('/superAdmin3', function () {
     return view('user_manager');
 });
+Route::get('/login', function () {
+    return view('login_manager');
+});
