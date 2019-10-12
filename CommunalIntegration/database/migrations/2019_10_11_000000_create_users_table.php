@@ -18,16 +18,25 @@ class CreateUsersTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('town_id')->unsigned()->nullable();
-            $table->integer('role_id')->unsigned();
-            $table->string('name', 60);
-            $table->string('email', 60);
+            $table->integer('role_id')->unsigned()->nullable();
+            $table->string('name', 60)->nullable();
+            $table->string('email', 60)->nullable();
             $table->string('email_verified_at', 100)->nullable();
+<<<<<<< HEAD
             $table->string('password', 100);
             $table->date('created_at');
             $table->integer('created_by');
             $table->date('updated_at');
             $table->integer('updated_by');
             $table->tinyInteger('active');
+=======
+            $table->string('password', 100)->nullable();
+            $table->date('created_at')->nullable();
+            $table->integer('created_by')->nullable();
+            $table->date('updated_at')->nullable();
+            $table->integer('updated_by')->nullable();
+            $table->tinyInteger('active')->nullable();
+>>>>>>> ed1bcc518274f3c3a3b256a6957e2221df34a7c8
             $table->index(["role_id"], 'fk_user_role1_idx');
             $table->index(["town_id"], 'fk_user_town_idx');
             $table->unique(["email"], 'email_UNIQUE');

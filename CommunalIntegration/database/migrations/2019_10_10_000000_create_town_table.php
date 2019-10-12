@@ -21,6 +21,7 @@ class CreateTownTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name', 45);
+            $table->string('image_path', 100)->nullable();
             $table->date('created_at');
             $table->integer('created_by');
             $table->date('updated_at');

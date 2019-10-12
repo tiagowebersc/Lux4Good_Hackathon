@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/superAdmin', 'SuperAdmin@getTowns');
+
+Route::get('/superAdmin2', function () {
+    return view('summary_manager');
+});
+Route::get('/superAdmin3', function () {
+    return view('user_manager');
+});
