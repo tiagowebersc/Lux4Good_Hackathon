@@ -11,8 +11,9 @@ class ThemeTableSeeder extends Seeder
      */
     public function run()
     {
+        $theme=['youth', 'integration', 'participation', 'sport', 'outreach'];
         DB::table('theme')->insert([
-            'description' => Str::Random(40),
+            'description' => $theme[rand(0, 4)],
             'created_at' => now(),
             'created_by' => 1,
             'updated_at' => now(),
@@ -21,7 +22,7 @@ class ThemeTableSeeder extends Seeder
         ]);
 
         DB::table('theme')->insert([
-            'description' => Str::Random(40),
+            'description' => $theme[rand(0, 4)],
             'created_at' => now(),
             'created_by' => 2,
             'updated_at' => now(),
@@ -30,7 +31,7 @@ class ThemeTableSeeder extends Seeder
         ]);
 
         DB::table('theme')->insert([
-            'description' => Str::Random(40),
+            'description' => $theme[rand(0, 4)],
             'created_at' => now(),
             'created_by' => 3,
             'updated_at' => now(),
@@ -39,7 +40,7 @@ class ThemeTableSeeder extends Seeder
         ]);
 
         DB::table('theme')->insert([
-            'description' => Str::Random(40),
+            'description' => $theme[rand(0, 4)],
             'created_at' => now(),
             'created_by' => 4,
             'updated_at' => now(),
@@ -48,7 +49,7 @@ class ThemeTableSeeder extends Seeder
         ]);
 
         DB::table('theme')->insert([
-            'description' => Str::Random(40),
+            'description' => $theme[rand(0, 4)],
             'created_at' => now(),
             'created_by' => 5,
             'updated_at' => now(),
@@ -57,11 +58,38 @@ class ThemeTableSeeder extends Seeder
         ]);
 
         DB::table('theme')->insert([
-            'description' => Str::Random(40),
+            'description' => $theme[rand(0, 4)],
             'created_at' => now(),
             'created_by' => 6,
             'updated_at' => now(),
             'updated_by' => 6,
+            'active' => rand(0, 1)
+        ]);
+
+        DB::table('theme')->insert([
+            'description' => $theme[rand(0, 4)],
+            'created_at' => now(),
+            'created_by' => 7,
+            'updated_at' => now(),
+            'updated_by' => 7,
+            'active' => rand(0, 1)
+        ]);
+
+        DB::table('theme')->insert([
+            'description' => $theme[rand(0, 4)],
+            'created_at' => now(),
+            'created_by' => 7,
+            'updated_at' => now(),
+            'updated_by' => 7,
+            'active' => rand(0, 1)
+        ]);
+
+        DB::table('theme')->insert([
+            'description' => $theme[rand(0, 4)],
+            'created_at' => now(),
+            'created_by' => 8,
+            'updated_at' => now(),
+            'updated_by' => 8,
             'active' => rand(0, 1)
         ]);
     }
