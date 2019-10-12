@@ -31,15 +31,15 @@
     
     <div class='main-screen'>
         <div class='charts-div'>
-            <canvas class='chart' id="myChart"></canvas>
-            <canvas class='chart' id="myChart2"></canvas>
+            <div class='chart'><h5>Gender</h5><canvas  id="myChart"></canvas></div>
+            <div class='chart'><h5>Age</h5><canvas  id="myChart2"></canvas></div>
             
         </div>
         <div class='campaign-list'>
             <ul>
-                <li># of campaigns: </li>
-                <li># of objectives:</li>
-                <li># of actions:</li>
+                <li># of campaigns: 3</li>
+                <li># of objectives: 15</li>
+                <li># of actions: 43</li>
             </ul>
         </div>
     </div>

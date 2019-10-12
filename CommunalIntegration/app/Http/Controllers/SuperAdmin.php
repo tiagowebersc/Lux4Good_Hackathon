@@ -36,4 +36,8 @@ class SuperAdmin extends Controller
     
         return view('summary_manager', ['queryGender' => $queryGender, 'queryAge' => $queryAge, 'nationality' => $queryNationality]);
     }
+
+    public function userList(){
+        return view('user_manager',[]);
+    }
 }

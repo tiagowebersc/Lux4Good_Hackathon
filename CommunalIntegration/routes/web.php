@@ -15,16 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/superAdmin', 'SuperAdmin@getTowns');
-Route::post('/superAdmin', 'SuperAdmin@createTown');
+Route::get('/townList', 'SuperAdmin@getTowns');
+Route::post('/townList', 'SuperAdmin@createTown');
 Route::get('/summaryAdmin', 'SuperAdmin@getResumoScreen');
+Route::get('/userList', 'SuperAdmin@userList');
 
-Route::get('/superAdmin2', function () {
-    return view('summary_manager');
-});
-Route::get('/superAdmin3', function () {
-    return view('user_manager');
-});
 Route::get('/login', function () {
     return view('login_manager');
 });

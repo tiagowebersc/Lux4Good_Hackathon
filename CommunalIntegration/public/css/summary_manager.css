@@ -6,17 +6,24 @@ main{
     display: flex;
 }
 .charts-div{
-    width: 60%;
+    width: 80%;
     border-right: 1px solid black;
+    display: flex;
 }
 .campaign-list{
     display: flex;
-    width: 30vw;
+    width: 10vw;
     align-items: center;
     justify-content: center;
+}
+.chart{
+    width: 500px;
 }
 h1{
     color: #707070;
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
+}
+h5{
+    text-align: center;
 }
