@@ -23,7 +23,7 @@ class CreateLanguageOutcomeTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('outcome_id');
-            $table->integer('language_id');
+            $table->integer('language_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
             $table->date('last_modification_at');

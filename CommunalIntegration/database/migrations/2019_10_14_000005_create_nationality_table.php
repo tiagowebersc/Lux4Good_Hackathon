@@ -23,7 +23,7 @@ class CreateNationalityTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('country_id');
-            $table->integer('outcome_id');
+            $table->integer('outcome_id')->unsigned();
             $table->date('created_at');
             $table->integer('created_by');
             $table->date('last_modification_at');

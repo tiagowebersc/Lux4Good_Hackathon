@@ -43,11 +43,11 @@ class CreateActionTable extends Migration
                 ->onDelete('no action')
                 ->onUpdate('no action');
             $table->foreign('user_editor_id', 'fk_action_user1_idx')
-                ->references('id')->on('user')
+                ->references('id')->on('users')
                 ->onDelete('no action')
                 ->onUpdate('no action');
             $table->foreign('user_responsible_id', 'fk_action_user2_idx')
-                ->references('id')->on('user')
+                ->references('id')->on('users')
                 ->onDelete('no action')
                 ->onUpdate('no action');
             $table->foreign('objective_id', 'fk_action_objective1_idx')
