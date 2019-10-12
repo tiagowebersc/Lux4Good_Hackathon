@@ -11,17 +11,19 @@
 
 <main>
     <?php
-        $keyGender = '';
         $valueGender = '';
         foreach ($queryGender as $value) {
             if (!empty($valueGender)) {
-                $keyGender .= ',';
-            }
-            $keyGender .= $value->gender;
-            if (!empty($valueGender)) {
-                $valueGender .= ',';
+                $valueGender .= ",";
             }
             $valueGender .= $value->total;
+        }
+        $valueAge = '';
+        foreach ($queryAge as $value) {
+            if (!empty($valueAge)) {
+                $valueAge .= ",";
+            }
+            $valueAge .= $value->total;
         }
     ?>
     {{$valueGender}}
@@ -53,26 +55,40 @@
             type: 'pie',
             data : {
                 datasets: [{
-                    data: [{{$valueGender}}]
+                    data: [{{$valueGender}}],
+            backgroundColor: ["#ff6cf3","#0074D9"]
                 }],
 
                 // These labels appear in the legend and in the tooltips when hovering different arcs
-                labels: [{{$keyGender}}]
+                labels: [<?php
+                foreach ($queryGender as $key => $value) {
+                    if ($key > 0) {
+                        echo ",";
+                    } ?>      
+                    '{{$value->gender}}'
+                    <?php
+                }
+            ?>]
             }
         });
         var myChart2 = new Chart(ctx2, {
             type: 'pie',
             data : {
                 datasets: [{
-                    data: [10, 20, 30]
+                    data: [{{$valueAge}}],
+            backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B"]
                 }],
 
                 // These labels appear in the legend and in the tooltips when hovering different arcs
-                labels: [
-                    'Red',
-                    'Yellow',
-                    'Blue'
-                ]
+                labels: [<?php
+                foreach ($queryAge as $key => $value) {
+                    if ($key > 0) {
+                        echo ",";
+                    } ?>      
+                    '{{$value->age}}'
+                    <?php
+                }
+            ?>]
             }
         });
         

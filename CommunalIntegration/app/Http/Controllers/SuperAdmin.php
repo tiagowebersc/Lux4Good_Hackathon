@@ -34,6 +34,6 @@ class SuperAdmin extends Controller
         $queryAge = DB::select("select a.age, count(1) total from outcome a group by a.age;", []);
         $queryNationality = DB::select("select c.name, count(1) total from outcome a, nationality b, country c where a.id = b.outcome_id and b.country_id = c.id group by c.name", []);
     
-        return view('summary_manager', ['queryGender' => $queryGender, 'age' => $queryAge, 'nationality' => $queryNationality]);
+        return view('summary_manager', ['queryGender' => $queryGender, 'queryAge' => $queryAge, 'nationality' => $queryNationality]);
     }
 }
