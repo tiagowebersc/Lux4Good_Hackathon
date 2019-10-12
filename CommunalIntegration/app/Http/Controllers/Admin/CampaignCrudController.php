@@ -45,8 +45,6 @@ class CampaignCrudController extends CrudController
     {
         $this->crud->setValidation(CampaignRequest::class);
 
-        $this->getTowns();
-        
         $this->crud->addField([  // Select
             'label' => "Town",
             'type' => 'select',
@@ -61,10 +59,5 @@ class CampaignCrudController extends CrudController
         // Hidden field relate to : created_by / updated_by
         $this->crud->addField(['name' => 'updated_by', 'type' => 'hidden', 'label' => 'Updated By', 'value'=> backpack_user()->id]);
     
-    }
-
-    protected function getTowns()
-    {
-        return \App\Models\Town::all();
     }
 }

@@ -45,8 +45,6 @@ class OutcomeCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         $this->crud->setValidation(OutcomeRequest::class);
-
-        $this->getActions();
         
         $this->crud->addField([  // Select
             'label' => "Action",
@@ -65,8 +63,4 @@ class OutcomeCrudController extends CrudController
     
     }
 
-    protected function getActions()
-    {
-        return \App\Models\Action::all();
-    }
 }
