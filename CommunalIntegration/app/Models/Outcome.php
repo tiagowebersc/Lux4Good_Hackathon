@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 
-class Campaign extends Model
+class Outcome extends Model
 {
     use CrudTrait;
 
@@ -15,7 +15,7 @@ class Campaign extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'campaign';
+    protected $table = 'outcome';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
@@ -34,8 +34,8 @@ class Campaign extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function town(){
-        return $this->belongsTo('App\Models\Town','town_id');
+    public function action(){
+        return $this->belongsTo('App\Models\Action','action_id');
     }
     /*
     |--------------------------------------------------------------------------
